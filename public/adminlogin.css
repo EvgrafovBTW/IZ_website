@@ -1,0 +1,38 @@
+
+body{
+    background-color: lightgray;
+    justify-content: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Gabriela";
+}
+
+.content{
+    background-color: white;
+    display: flex;
+    width: 400px;
+    margin: auto;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.formContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btn{
+    margin: 0.5rem auto;
+}
+
+.lgn{
+    margin-bottom: 1rem;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.pswrd{
+    margin-left: 2px;
+    margin-right: 2px;
+}

@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+body{
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: row;
+    font-family: Gabriela;
+}
+
+.sidemenu{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    height: 100vh;
+    margin-right: 20%;
+}
+.logo{
+    width: 200px;
+    height: 140px;
+    margin-left: 15%;
+    background-image: url(/logo.svg);
+    background-repeat: no-repeat;
+}
+
+.content{
+    background-color: white;
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 20vh;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.formContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.btn{
+    margin: 0.5rem auto;
+}
+
+.lgn{
+    margin-bottom: 1rem;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.pswrd{
+    margin-left: 2px;
+    margin-right: 2px;
+}

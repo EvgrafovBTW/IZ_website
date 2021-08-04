@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <meta charset="utf-8">
+	<link rel="stylesheet" href="/admin.css">
+	<title>Добавть тираж</title>
+</head>
+
+<body>
+	
+		<div class="sidemenu">
+				<div class="logo"></div>
+				<span style="margin-left:30%">Чёрный Ворон</span>
+			<hr style="margin:10px;">
+				<span style="margin-left: 40px; font-size:20px">Здравствуйте, {{userlg}}!</span>
+			<hr style="margin:10px;">
+				<div class="knop" style="display: flex; flex-direction:column; justify-content:space-around">
+					<a href="/admin/login" style="text-decoration: none; color:black; margin-bottom:10px;">
+						<span style="margin-left:40px;">Сменить пользователя</span>
+					</a>
+					<a href="/admin/registration" style="text-decoration: none; color:black; margin-bottom:10px;">
+						<span style="margin-left:40px;">Регистрация пользователя</span>
+					</a>
+					<a href="/admin" style="text-decoration: none; color:black; margin-bottom:10px;">
+						<span style="margin-left:40px;">Добавть тираж</span>
+					</a>
+					<a href="/" style="text-decoration: none; color:black; margin-top:50vh; margin-left:6rem;">
+						<span>На главную</span>
+					</a>
+				</div>
+		</div>
+
+
+	<form action="/IZzakaz" method="POST" class="content">
+		<div style="display: flex; flex-direction:row; justify-content:space-around; margin-bottom:3rem;">
+				<div class="treb" style="margin-left: 10px; margin-right:20px;">
+					<span style="font-size: 24px;">Требования пользователя к тиражу:</span><br><br>
+					<p><input type="checkbox" name="treb1" value="1"> Корректорская правка текста (исправить орфографию и пунктуацию)</p>
+					<p><input type="checkbox" name="treb2" value="1"> Верстка текста книги</p>
+					<p><input type="checkbox" name="treb3" value="1"> Дизайн и верстка обложки</p>
+					<p><input type="checkbox" name="treb4" value="1"> Присвоить коды ISBN, УДК и др. (защита прав + продажи)</p>	
+				</div>
+				<div style="display: flex; flex-direction:column; justify-content:space-around; margin-right:10px">
+					<div class="pages"> 
+						<span id="txt">Кол-во страниц в рукописи</span> <br><br>
+						<input type="number" name="page_amount" value="" placeholder="Введите кол-во страниц">
+					</div>
+					<div class="format">
+						 <span id="txt">Формат книги</span> <br><br> 
+						<select name="format">
+							<option> А5 (обрезной 148х210) стандарт</option>
+							<option> A5+ (обрезной 165х235)</option>
+							<option> А4 (обрезной 205х290)</option>
+							<option> А6 (обрезной 130х200)</option>
+						</select>
+					</div>
+				</div>
+		</div>
+
+		<div style="display: flex; flex-direction:row; justify-content:space-around;">
+			<div class="ekz">
+				<span id="txt">Кол-во экземпляров</span> <br><br>
+			<input type="number" name="tirazh" placeholder="Введите количество книг">
+			</div>
+			<div class="obl">
+			<span id="txt">Тип обложки</span><br><br>
+			<select name="oblozhka">
+				<option>Мягкая цветная</option>
+				<option>Твёрдый переплёт, цветная</option>
+			</select>
+			</div>
+		</div>
+
+		<div style="display: flex; flex-direction:row; justify-content:space-around; margin-top:5rem;">
+			<div class="name">
+				<span>Имя</span>
+				<input type="text" style="width: 169px;" name="name" placeholder="Имя пользователя"> 
+			</div>
+			<div class="tel">
+				<span>Номер телефона</span>
+				<input type="tel" name="tel" class="tel" placeholder="+7" maxlength="10">
+			</div>
+			<div class="email">
+				<span>Эл. почта</span>
+				<input type="mail" name="mail" style="width: 169px;" placeholder="example@izdat.ru">
+			</div>
+		</div>
+		<button type="submit" class="btn btn-secondary" >Отправить</button>		
+	</form>
+
+</body>

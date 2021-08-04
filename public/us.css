@@ -1,0 +1,50 @@
+.content{
+	background-color: white;
+	width: 1370px;
+	height: 707px;
+	margin-left: 18%;
+	margin-top: 260px;
+}
+
+	.us_t{
+		font-family: Gabriela;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 50px;
+		line-height: 46px;
+		color: #000000;
+		margin-left: 7%;
+		margin-top: 2%;
+	}
+
+	.t1{
+			font-family: Gabriela;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 46px;
+		color: #000000;
+		margin-left: 7%;
+		margin-top: 5%;
+	}
+	.t2{
+			font-family: Gabriela;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 26px;
+		color: #000000;
+		margin-left: 5%;
+		margin-top: 5%;
+	}
+
+	.pdp{
+		font-family: Gabriela;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 24px;
+		line-height: 46px;
+		color: grey;
+		margin-top: 5px;
+		margin-left: 40%;
+	}

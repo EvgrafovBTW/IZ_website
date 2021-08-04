@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabriela&display=swap');
+
+
+body{
+    font-family: Gabriela;
+	display: flex;
+	flex-direction: row;
+}
+
+.con{
+	margin-left: 13%;
+	background-color: white;
+	width: 1400px;
+	height: 100px;
+	margin-top: 260px;
+}
